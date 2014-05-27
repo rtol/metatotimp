@@ -1,0 +1,11 @@
+disp('base regressions');  
+[tolb(1) toln(2) tolb(3)] = fittol(temp,imp);
+imptolb = evaltol(evaltemp,[tolb(1) tolb(2)]);
+[wmnb(1) wmnb(2) wmnb(3)] = fitweitzman(temp,imp);
+impwmnb = evalweitzman(evaltemp,[wmnb(1) wmnb(2)]);
+[plgb(1) plgb(2)] = fitploeg(temp,imp);
+impplgb = evalploeg(evaltemp,plgb(1));
+[nrdb(1) nrdb(2)] = fitnordhaus(temp,imp);
+impnrdb = evalnordhaus(evaltemp,nrdb(1));
+[hopb(1) hopb(2)] = fithope(temp,imp);
+imphopb = evalhope(evaltemp,hopb(1));
